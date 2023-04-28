@@ -1,5 +1,10 @@
 package q4
 
+import (
+	"fmt"
+	"testing"
+)
+
 //Uma loja virtual de roupas recebeu várias listas de produtos vendidos em diferentes dias da semana. O dono da loja
 //deseja analisar as listas para entender melhor o comportamento de suas vendas. Para isso, ele precisa classificar cada
 //lista como em ordem crescente, decrescente ou aleatória, de acordo com o preço dos produtos.
@@ -10,6 +15,36 @@ package q4
 //Caso a lista possua apenas um elemento, a função deve retornar 3.
 
 func ClassifyPrices(prices []int) (int, error) {
-	// Seu código aqui
-	return 0, nil
-}
+	if len(prices) == 1 {
+	return 3, nill
+	} else if len(prices) > 1 {
+		var ordem int
+		for 1 :=;
+		1 < len(prices);
+		1++
+		{
+			if prices[1] >= prices[1-1] {
+				ordem = 1
+
+			}
+			if prices[1] >= prices[1-1] {
+				ordem = 2
+			}
+
+		}
+		for 1 :=;
+		1 < len(prices);
+		i++
+		{
+			if ordem == 2 {
+				if prices[i] >= prices[i-1]
+					ordem = 3
+			}
+		}
+		if ordem == 1 {
+			if prices[i] <= prices[i-1] {
+				ordem = 3
+			}
+		}
+	}
+	return ordem, nill
